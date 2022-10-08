@@ -1,14 +1,17 @@
 body {
   font-family: "Fuzzy Bubbles", cursive;
-  background-image: url("https://i.pinimg.com/originals/22/86/5d/22865d37c50ee9c9f96e2cd3e9c7aecc.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #042b3e;
+  color: aliceblue;
 }
 
 .container {
   height: auto;
   width: 150vh;
-  margin: 90px auto;
+  margin: 0 auto;
   margin-bottom: 200px;
   border-radius: 10px;
 }
@@ -55,7 +58,7 @@ button {
 }
 
 .remove {
-  margin-left: 20px;
+
   position: absolute;
   top: 0;
   right: 260px;
@@ -127,32 +130,24 @@ footer {
   color: green;
 }
 
-@media only screen and (max-width: 900px) {
-  h1 {
-    margin-top: -30px;
-    font-size: 35px;
+/*Phone size style*/
+@media (max-width: 500px) {
+  input{
+    margin-left: 150px;
+    width: 200px;
   }
-
-  .container {
-    width: 450px;
-    height: 100vh;
+  button{
+    width: 80px;
+    font-size: 15px;
   }
-
-  input {
-    width: 150px;
-    text-align: center;
-    margin-left: 30px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 25px;
+  p{
+    margin-left: -10px;
   }
-
-  .remove {
-    top: 0;
-    right: 0px;
+  .remove{
+    left: 500px;
+    width: 100px;
   }
-
-  footer {
-    left: 320px;
+  .remove-task{
+    margin-right: 50px;
   }
 }

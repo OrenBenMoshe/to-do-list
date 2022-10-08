@@ -31,7 +31,7 @@ function Task(props) {
       >
         {text}
       </li>
-      <button onClick={() => deleteTask(text)}>
+      <button className="remove-task" onClick={() => deleteTask(text)}>
         <FaTrash />
       </button>
     </div>
