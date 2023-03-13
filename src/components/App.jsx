@@ -95,7 +95,7 @@ function App() {
         ) : (
           <ul>
             <p> you deleted all tasks </p>
-            <p> make a new one and add it to the list </p>
+            <p> make a new one and add it to your list </p>
           </ul>
         )}
       </div>
